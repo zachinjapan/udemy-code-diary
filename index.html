@@ -6,12 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>code-diary</title>
+    <!--head meta tags-->
+    <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
 </head>
 
 <body>
-
-    <!--head meta tags-->
-    <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
+    <!--auto closing tags-->
+    <br> <!-- break-->
+    <hr> <!-- line break-->
+    <img src "path/##" alt "<This is alternate text if the website can't show the picture">
+    <link rel="stylesheet" href="style.css">
+    <!--links the style sheet-->
 
     <!--main content-->
     <h1>This is heading 1</h1>
@@ -33,8 +38,8 @@
     <ol start="5">
         <li> this list starts at 5.</li>
     </ol>
-    <a href "google.com"> this is a link to google </a> <br>
-    <strong> <a href "google.com"> this is a (strong) link to google </a></strong> <br> <br>
+    <a href "https://www.google.com/> this is a link to google </a> <br>
+    <strong> <a href " https://www.google.com"> this is a (strong) link to google </a></strong> <br> <br>
 
     <hr>
 
@@ -111,11 +116,48 @@
     </form>
 
 
+    <h3>CSS TIME!</h3>
+    <div>
+        <h4>inline + internal (external)</h4>
+        <!--inline-->
+        <p style="background-color: powderblue ;">Lorem ipsum dolor sit amet
+            consectetur, adipisicing elit. Temporibus id cumque ipsa excepturi, et provident quidem sapiente, eius
+            facere voluptate eaque incidunt fuga delectus illum magnam in accusamus quasi repellat!</p>
+        <!--internal/external-->
+        <!--
+            internal
+            style {
+                background-color: powderblue;
+            }
+        -->
+    </div>
+    <div>
+        <h4>change default css for hr</h4>
+        <hr style="border-color:gray;
+                height: 0px; 
+                border-style: none;
+                border-top-style: dotted;
+                border-width: 5px;
+                width: 10%;
+                ">
+        <!--height 0 pix = no box, border style none = remove all borders, border top style bring just the top line back-->
+    </div>
+    <div>
+        <!-- <h4>How to debug CSS</h4>
+        <h5>developer tools </h5>
+        <P>console command to show errors</p>
+        <p>elements to inspict the part that isn't looking how you want it to.</p>
+        <p>order of priority = inline, internal, then external </p>
+        <p>best practice is to have all styles in external css</p> -->
+    </div>
+    <div>
+        <!--CSS Syntac-->
+        <!--slector {prperty:value;}-->
+       <!-- <p>best practice is to have all styles in external css</p> -->
+       <!--best practice is to have properties in alphabetical order-->
+    </div>
 
-    <!--auto closing tags-->
-    <br> <!-- break-->
-    <hr> <!-- line break-->
-    <img src "path/##" alt "<This is alternate text if the website can't show the picture">
+
 
 </body>
 
