@@ -2,12 +2,15 @@
 <html lang="en">
 
 <head>
+    <!--head meta tags-->
+    <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type=".ico" href="/images/favicon.ico">
+    <!-- favicon.cc to make a favicon -->
     <title>code-diary</title>
-    <!--head meta tags-->
-    <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
+
 </head>
 
 <body>
@@ -38,8 +41,8 @@
     <ol start="5">
         <li> this list starts at 5.</li>
     </ol>
-    <a href "https://www.google.com/> this is a link to google </a> <br>
-    <strong> <a href " https://www.google.com"> this is a (strong) link to google </a></strong> <br> <br>
+    <a href="https://www.google.com"> this is a link to google </a> <br>
+    <strong> <a href="https://www.google.com"> this is a (strong) link to google </a></strong> <br> <br>
 
     <hr>
 
@@ -147,7 +150,7 @@
         <h5>developer tools </h5>
         <ul>
             <li>console command to show errors</li>
-            <li>elements to inspict the part that isn't looking how you want it to</li>
+            <li>elements to inspect the part that isn't looking how you want it to</li>
             <li>order of priority = inline, internal, then external </li>
             <li>best practice is to have all styles in external css</li>
         </ul>
@@ -161,24 +164,73 @@
         </ul>
     </div>
     <div>
-        <h4>class selectors</h4>
-        <img class="fubuki" src= "fubuki.jpg" alt="Fubuki">
-        <img class= "coco" src= "coco.jpg" alt="coco">
+        <h4>class selector </h4>
+        <h6 class="fubuki">FUBUKI </h6>
+        <h6 class="coco">COCO</h6>
         <style>
+
             .fubuki {
                 background-color: aquamarine;
             }
             
             .coco {
-                background-color: black;
+                background-color:red;
+            }
+
+            .fubuki:hover {
+                background-color: red;
+            }
+
+            .coco:hover {
+                background-color:aquamarine;
             }
 
         </style>
     </div>
-
-    test
-
+    <div>
+        <ul>
+            <li>tag selector
     
+                <!-- tag { style} -->
+                <ul>
+                    <li>weakest, affects anything with that tag</li>
+                </ul>
+                </li>
+                <li>
+                    class selector
+                    <!-- .class {style}  -->
+                    <ul>
+                        <li>
+                            stronger than tag selector, used when you want to only change a 1->a few elements in the same way
+                        </li>
+                        <li>
+                            its posible to use two classes on the same element
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    id selector
+                    <!-- #id {style} -->
+                </li>
+                <ul>
+                    <li>strongest, can only be used for one element on page. never repeated</li>
+                    <li>try not to use a lot</li>
+                </ul>
+                </ul>
+                </div>
+                <div>
+                    <h4> usings divs</h4>
+                    <div class="using-divs">
+                        <h4>Zach Stone</h4>
+                        <p>Web Developer</p>
+                        <style>
+                            .using-divs {
+                                background-color: aquamarine;
+                            }
+                        </style>
+                        </div>
+                        </div>
+
 
 </body>
 
