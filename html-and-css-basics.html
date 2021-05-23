@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--head meta tags-->
+    <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type=".ico" href="/images/favicon.ico">
+    <!-- favicon.cc to make a favicon -->
+    <!-- <link rel="stylesheet" href="style.css">-->
+    <!--links a style sheet -->
+
+    <title>html and css basics</title>
+
+</head>
+
+<body>
+    <div id="top-of-page"></div>
+    <header>
+
+        <a href="index.html">
+            <h5>home page </h5>
+        </a>
+
+        <a href="cheat-sheet.html" target="_blank">
+            <h5> cheat sheet</h5>
+
+        </a>
+
+        <a href="#top-of-page">
+            <h5>jump to top</h5>
+        </a>
+
+        <style>
+            header {
+                text-align: center;
+                position: fixed;
+                right: 20px;
+                background-color: lightgray;
+                padding: 10px 30px 10px 10px;
+                opacity: 0.8;
+                text-decoration: solid;
+
+
+            }
+        </style>
+    </header>
+    <main>
+
+        <!--auto closing tags-->
+        <br> <!-- break-->
+        <hr> <!-- line break-->
+        <!-- <img src "path/##" alt "<This is alternate text if the website can't show the picture"> -->
+
+        <!--main content-->
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+
+        <ol>
+            <li> this is an ordered list </li>
+        </ol>
+        <ul>
+            <li> this in an unordered list </li>
+        </ul>
+        <ol type="i">
+            <li> this is a roman numeral type list>
+        </ol>
+        <ol start="5">
+            <li> this list starts at 5.</li>
+        </ol>
+        <a href="https://www.google.com"> this is a link to google </a> <br>
+        <strong> <a href="https://www.google.com"> this is a (strong) link to google </a></strong> <br> <br>
+
+        <hr>
+
+        <table>
+            <tr>
+                <td>
+                    <table cellspacing="10">
+                        <tr>
+                            <td> this is a table data </td>
+                            <td> ★★★★★ </td>
+                        </tr>
+                        <tr>
+                            <td> this is a table data </td>
+                            <td> ★★★★★ </td>
+                        </tr>
+                        <tr>
+                            <td> this is a table data </td>
+                            <td> ★★★★★ </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+
+                        </tfoot>
+                    </table>
+                </td>
+                <td>
+                    <table cellspacing="10">
+                        <tr>
+                            <td> this is a table data </td>
+                            <td> ★★★★★ </td>
+                        </tr>
+                        <tr>
+                            <td> this is a table data </td>
+                            <td> ★★★★★ </td>
+                        </tr>
+                        <tr>
+                            <td> this is a table data </td>
+                            <td> ★★★★★ </td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+
+                        </tfoot>
+                    </table>
+                </td>
+        </table>
+
+        <hr>
+        <form class "" action="index.html" method="POST">
+            <!-- form class "" action="mailto:burgerking@gmail.com" method="POST" This opens the info as an email in a local client-->
+            <label>Your Name:</label>
+            <input type="text" name="" value="">
+            <label>Password:</label>
+            <input type="password" name="" value="">
+            <br>
+            <label>Do you want to sign up?</label>
+            <input type="checkbox" name="" value=""><br>
+            <label> What color do you like?</label>
+            <input type="color" name="" value=""><br>
+            <label>I'm hungry. Feed me a file!</label>
+            <input type="file" name="" value=""><br>
+            <label> What is your favorite date?</label>
+            <input type="date" name="" value=""><br>
+            <label> Pick only 1! </label>
+            <input type="radio" name="agree" value="hai">hai
+            <input type="radio" name="agree" value="yes">yes<br>
+            <label> Do you feel happy? </label>
+            <input type="range" name="" value=""><br>
+            <label> Can I email you? </label>
+            <input type="email" name="" value=""><br>
+            <label> Your Message</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea><br>
+            <input type="submit" name="">
+        </form>
+
+
+        <h3>CSS TIME!</h3>
+        <div>
+            <h4>inline + internal (external)</h4>
+            <!--inline-->
+            <p style="background-color: powderblue ;">Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Temporibus id cumque ipsa excepturi, et provident quidem sapiente, eius
+                facere voluptate eaque incidunt fuga delectus illum magnam in accusamus quasi repellat!</p>
+            <!--internal/external-->
+            <!--
+            internal
+            style {
+                background-color: powderblue;
+            }
+        -->
+        </div>
+        <div>
+            <h4>change default css for hr</h4>
+            <hr style="border-color:gray;
+                height: 0px; 
+                border-style: none;
+                border-top-style: dotted;
+                border-width: 5px;
+                width: 10%;
+                ">
+            <!--height 0 pix = no box, border style none = remove all borders, border top style bring just the top line back-->
+        </div>
+        <div>
+            <a href="cheat-sheet.html" target="_blank">
+                <h4>how to debug css</h4>
+            </a>
+            </a>
+            <a href="cheat-sheet.html" target="_blank">
+                <h4>developer tools</h4>
+            </a>
+        </div>
+        <div>
+            <a href="cheat-sheet.html" target="_blank">
+                <h4>types of selectors</h4>
+            </a>
+            <h6 class="fubuki">FUBUKI </h6>
+            <h6 class="coco">COCO</h6>
+            <style>
+                .fubuki {
+                    background-color: aquamarine;
+                }
+
+                .coco {
+                    background-color: red;
+                }
+
+                .fubuki:hover {
+                    background-color: red;
+                }
+
+                .coco:hover {
+                    background-color: aquamarine;
+                }
+            </style>
+        </div>
+        <div>
+            <h4>box model</h4>
+            <div class="box-model">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad similique odit nisi aperiam omnis
+                    labore,
+                    assumenda possimus architecto ipsa repellat itaque explicabo illo dolorem ea deleniti nostrum non
+                    atque
+                    unde!</p>
+                <style>
+                    .box-model {
+                        background-color: seagreen;
+                        width: 100%;
+                        height: 100%;
+                        /* makes the width of the box that the p is contained in 50% */
+                        border-style: solid;
+                        /* shows border */
+                        border-color: rgb(189, 18, 18);
+                        padding: 50px;
+                        /* padding betwen content and border */
+                        margin-top: 10px;
+                        margin-right: 10px;
+                        margin-bottom: 10px;
+                        margin-left: 10px;
+                    }
+                </style>
+            </div>
+        </div>
+        <img src="images/iu.gif" alt="css box">
+        <a href="cheat-sheet.html" target="_blank">
+            <h4>display property</h4>
+        </a>
+        <div>
+            <div class="box-1">
+                <style>
+                    .box-1 {
+                        height: 140px;
+                        width: 140px;
+                        background-color: blue;
+                        border-style: solid;
+                        border-width: 10px;
+                        border-color: black;
+                        padding: 20px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-bottom: 0px;
+                        margin-left: 0px;
+
+                    }
+                </style>
+            </div>
+            <div class="box-2">
+                <style>
+                    .box-2 {
+                        height: 160px;
+                        width: 160px;
+                        background-color: red;
+                        padding: 0px;
+                        border-style: solid;
+                        border-width: 20px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-bottom: 0px;
+                        margin-left: 200px;
+
+                    }
+                </style>
+            </div>
+            <div class="box-3">
+                <style>
+                    .box-3 {
+                        height: 180px;
+                        width: 180px;
+                        background-color: yellow;
+                        border-style: solid;
+                        border-width: 10px;
+                        margin-top: 0px;
+                        margin-right: 0px;
+                        margin-bottom: 0px;
+                        margin-left: 400px;
+                    }
+                </style>
+            </div>
+        </div>
+        <a href="cheat-sheet.html" target="_blank">
+            <h4>css position property</h4>
+        </a>
+        <div>
+            <div class="box-1-pp">
+                <style>
+                    .box-1-pp {
+                        height: 200px;
+                        width: 200px;
+                        background-color: blue;
+                        /* position part */
+                        display: inline-block;
+                        position: relative;
+
+                    }
+                </style>
+            </div>
+            <div class="box-2-pp">
+                <style>
+                    .box-2-pp {
+                        height: 200px;
+                        width: 200px;
+                        background-color: red;
+                        /* position part */
+                        display: inline-block;
+                        position: relative;
+                        left: 200px;
+
+                    }
+                </style>
+            </div>
+            <div class="box-3-pp">
+                <style>
+                    .box-3-pp {
+                        height: 200px;
+                        width: 200px;
+                        background-color: yellow;
+                        /* position part */
+                        display: inline-block;
+                        position: relative;
+                        right: 200px
+                    }
+                </style>
+            </div>
+        </div>
+
+        <div class="top-container">
+            <img src="/images/css-my-site-images/cloud.png" alt="cloud" class="top-cloud">
+            <h1 class="mountain-example-h1">Zach Stone</h1>
+            <p>Web <span style="text-decoration: underline;">De</span>veloper</p>
+            <!-- span is an inline element like a and img -->
+            <!-- span only fill to the content and arent able to modified using width etc... -->
+            <img src="images/css-my-site-images/cloud.png" alt="cloud" class="bottom-cloud">
+            <img src="images/css-my-site-images/mountain.png" alt="mountain">
+            <style>
+                .top-container {
+                    text-align: center;
+                    background-color: rgb(97, 184, 241);
+                    width: 100%;
+                    padding-top: 100px;
+                    position: relative;
+                }
+
+                .mountain-example-h1 {
+                    width: 10%;
+                    margin: 0 auto 0 auto
+                        /* makes the margin auto fix to center of screen */
+                }
+
+                .top-cloud {
+
+                    position: absolute;
+                    right: 300px;
+                    top: 50px;
+                }
+
+                .bottom-cloud {
+                    position: absolute;
+                    left: 300px;
+                    bottom: 300px;
+                }
+            </style>
+        </div>
+        <div class="middle-container">
+
+        </div>
+        <div class="bottom-container">
+
+        </div>
+        <style>
+        </style>
+        </div>
+    </main>
+</body>
+
+</html>
