@@ -47,6 +47,34 @@
             }
         </style>
     </header>
+    <div class="fixed-header">
+        <ol>
+            <li>
+                <a href="#heading"> headings</a>
+            </li>
+            <li>
+                <a href="#list">lists</a>
+            </li>
+            <li>
+                <a href="#table">tables</a>
+            </li>
+            <li>
+                <a href="#form">forms</a>
+            </li>
+            <li>
+                <a href="#css-basics">css basics</a>
+            </li>
+            <li>
+                <a href="#box-model">css box model</a>
+            </li>
+            <li>
+                <a href="#display-property">css display property</a>
+            </li>
+            <li>
+                <a href="#position-property">css position property</a>
+            </li>
+        </ol>
+    </div>
     <main>
 
         <!--auto closing tags-->
@@ -55,6 +83,7 @@
         <!-- <img src "path/##" alt "<This is alternate text if the website can't show the picture"> -->
 
         <!--main content-->
+        <div id="heading"></div>
         <h1>This is heading 1</h1>
         <h2>This is heading 2</h2>
         <h3>This is heading 3</h3>
@@ -62,6 +91,7 @@
         <h5>This is heading 5</h5>
         <h6>This is heading 6</h6>
 
+        <div id="list"></div>
         <ol>
             <li> this is an ordered list </li>
         </ol>
@@ -79,6 +109,7 @@
 
         <hr>
 
+        <div id="table"></div>
         <table>
             <tr>
                 <td>
@@ -124,6 +155,7 @@
         </table>
 
         <hr>
+<div id="form"></div>
         <form class "" action="index.html" method="POST">
             <!-- form class "" action="mailto:burgerking@gmail.com" method="POST" This opens the info as an email in a local client-->
             <label>Your Name:</label>
@@ -151,8 +183,13 @@
             <input type="submit" name="">
         </form>
 
-
-        <h3>CSS TIME!</h3>
+        <div id="css-basics"></div>
+        <h3 class="css-time-heading">CSS TIME!</h3>
+        <style>
+            .css-time-heading {
+                text-align: center;
+            }
+        </style>
         <div>
             <h4>inline + internal (external)</h4>
             <!--inline-->
@@ -179,18 +216,7 @@
             <!--height 0 pix = no box, border style none = remove all borders, border top style bring just the top line back-->
         </div>
         <div>
-            <a href="cheat-sheet.html" target="_blank">
-                <h4>how to debug css</h4>
-            </a>
-            </a>
-            <a href="cheat-sheet.html" target="_blank">
-                <h4>developer tools</h4>
-            </a>
-        </div>
-        <div>
-            <a href="cheat-sheet.html" target="_blank">
-                <h4>types of selectors</h4>
-            </a>
+
             <h6 class="fubuki">FUBUKI </h6>
             <h6 class="coco">COCO</h6>
             <style>
@@ -211,6 +237,7 @@
                 }
             </style>
         </div>
+        <div id="box-model"></div>
         <div>
             <h4>box model</h4>
             <div class="box-model">
@@ -239,9 +266,7 @@
             </div>
         </div>
         <img src="images/iu.gif" alt="css box">
-        <a href="cheat-sheet.html" target="_blank">
-            <h4>display property</h4>
-        </a>
+        <div id="display-property"></div>
         <div>
             <div class="box-1">
                 <style>
@@ -294,9 +319,7 @@
                 </style>
             </div>
         </div>
-        <a href="cheat-sheet.html" target="_blank">
-            <h4>css position property</h4>
-        </a>
+        <div id="position-property"></div>
         <div>
             <div class="box-1-pp">
                 <style>
