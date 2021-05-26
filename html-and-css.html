@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-        <!--head meta tags-->
-        <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
-        <!-- <link rel="stylesheet" href="style.css">-->
-        <!--links a style sheet -->
+    <!--head meta tags-->
+    <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
+    <!-- <link rel="stylesheet" href="style.css">-->
+    <!--links a style sheet -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- favicon.cc to make a favicon -->
+    <!-- favicon.cc to make a favicon -->
     <link rel="shortcut icon" type=".ico" href="/images/favicon.ico">
     <!-- google fonts style sheet for sacramento -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
-    <title>html and css basics</title>
+    <title>html-and-css</title>
 
 </head>
 
@@ -80,7 +80,7 @@
     </div>
     <main>
         <!-- how to debug css -->
-        
+
         <!--console command to show errors-->
         <!-- -elements to inspect the part that isn't looking how you want it to     -->
         <!-- -order of priority = inline, internal, external      -->
@@ -164,7 +164,7 @@
         </table>
 
         <hr>
-<div id="form"></div>
+        <div id="form"></div>
         <form class "" action="index.html" method="POST">
             <!-- form class "" action="mailto:burgerking@gmail.com" method="POST" This opens the info as an email in a local client-->
             <label>Your Name:</label>
@@ -194,22 +194,22 @@
 
         <div id="css-basics"></div>
         <h3 class="css-time-heading">CSS TIME!</h3>
-                <!-- css syntax -->
-                
-                <!-- selector {property:value;) -->
-                <!-- best practice is to have all styles in external css -->
-                <!-- best practice is to have properties in alphabetical order -->
-                
-                <!-- types of selectors -->
-                
-                <!-- tag { style} - weakest, affects anything with that tag -->
+        <!-- css syntax -->
 
-                <!-- .class {style} -->
-                <!--stronger than tag selector, used when you want to only change a 1- a few elements in the same way-->
-                <!--its posible to use two classes on the same element -->
+        <!-- selector {property:value;) -->
+        <!-- best practice is to have all styles in external css -->
+        <!-- best practice is to have properties in alphabetical order -->
 
-                <!--id -->
-                <!-- strongest class out of all. only can be used for one element per page (use with caution) -->
+        <!-- types of selectors -->
+
+        <!-- tag { style} - weakest, affects anything with that tag -->
+
+        <!-- .class {style} -->
+        <!--stronger than tag selector, used when you want to only change a 1- a few elements in the same way-->
+        <!--its posible to use two classes on the same element -->
+
+        <!--id -->
+        <!-- strongest class out of all. only can be used for one element per page (use with caution) -->
 
         <style>
             .css-time-heading {
@@ -293,41 +293,41 @@
         </div>
         <img src="images/iu.gif" alt="css box">
         <div id="display-property"></div>
-<!----------------------------------------------->
+        <!----------------------------------------------->
 
-<!-- display property -->
+        <!-- display property -->
 
-<!-- display:inline -->
-<!-- Displays an element as an inline element (like span). Any height and width properties will have no effect -->
+        <!-- display:inline -->
+        <!-- Displays an element as an inline element (like span). Any height and width properties will have no effect -->
 
-<!-- display:block -->
-<!-- Displays an element as a block element ( like p). It starts on a new line, and takes up the whole width -->
+        <!-- display:block -->
+        <!-- Displays an element as a block element ( like p). It starts on a new line, and takes up the whole width -->
 
-<!-- display:inline-block -->
-<!-- Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values -->
+        <!-- display:inline-block -->
+        <!-- Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values -->
 
-<!-- display:none -->
-<!-- The element is completely removed rather than using this use visability: hidden to make elements act as placeholders -->
+        <!-- display:none -->
+        <!-- The element is completely removed rather than using this use visability: hidden to make elements act as placeholders -->
 
-<!----------------------------------------------->
+        <!----------------------------------------------->
 
-<!-- css position property -->
-<!-- static -->
-<!-- go with the normal html r es. (default for any html without css) -->
+        <!-- css position property -->
+        <!-- static -->
+        <!-- go with the normal html r es. (default for any html without css) -->
 
-<!-- relative -->
-<!-- posiion the element that we select releative to how it would have been. (with margins) -->
-<!-- when you move an element the other elements still pretend you didnt move anything -->
+        <!-- relative -->
+        <!-- posiion the element that we select releative to how it would have been. (with margins) -->
+        <!-- when you move an element the other elements still pretend you didnt move anything -->
 
-<!-- absolute -->
-<!-- postion element relative to it's parent -->
-<!-- does affect the flow of the elements -->
+        <!-- absolute -->
+        <!-- postion element relative to it's parent -->
+        <!-- does affect the flow of the elements -->
 
-<!-- fixed -->
-<!-- fixed to position of website. if you scroll it always shows
+        <!-- fixed -->
+        <!-- fixed to position of website. if you scroll it always shows
 this would be good for a nav bar or something that always should go with the user as they scroll -->
 
-<!----------------------------------------------->
+        <!----------------------------------------------->
 
         <div>
             <div class="box-1">
@@ -424,32 +424,32 @@ this would be good for a nav bar or something that always should go with the use
                 </style>
             </div>
         </div>
-    
-<!----------------------------------------------->
+
+        <!----------------------------------------------->
 
         <!-- font styles -->
-        
+
         <!-- serif  -->
         <!-- sans serif (no feet) -->
         <!-- monospace is easy to read for code. evenly spaced -->
         <!-- cursive and fantasy aren't realy used -->
-        
+
         <!-- font-size -->
-        
+
         <!-- font size in pixels is absolute but percentages em can be changed if the user incrases the font size globaly. -->
         <!--100% = 16px, 1 em = 16px-->
         <!-- em and percentages are em inherited. em (ex body = 2em and h1 = 5em the res ting text is 7em) -->
         <!-- rem fixes that problem -->
-<!-- font-weight -->
-<!-- controls the amount of bolding -->
+        <!-- font-weight -->
+        <!-- controls the amount of bolding -->
 
-<!----------------------------------------------->
+        <!----------------------------------------------->
 
-<!-- float: -->
-<!-- makes the text wrap around the element -->
-<!-- clear: -->
-<!-- prevents anything from obstructing the side specified aka "the anti-float" -->
-<!-- often abused. only use when really necessary (wrapping text) not for layout properties -->
+        <!-- float: -->
+        <!-- makes the text wrap around the element -->
+        <!-- clear: -->
+        <!-- prevents anything from obstructing the side specified aka "the anti-float" -->
+        <!-- often abused. only use when really necessary (wrapping text) not for layout properties -->
 
         <div class="top-container">
             <img src="/images/css-my-site-images/cloud.png" alt="cloud" class="top-cloud">
@@ -468,7 +468,7 @@ this would be good for a nav bar or something that always should go with the use
                     padding-top: 100px;
                     position: relative;
                     font-family: 'Sacramento', cursive;
-                    margin:0;
+                    margin: 0;
                     /* the site trys the fonts in the order written */
                 }
 
@@ -479,13 +479,15 @@ this would be good for a nav bar or something that always should go with the use
                     margin: 50px auto 0 auto
                         /* makes the margin auto fix to center of screen */
 
-                    
+
                 }
+
                 .mountain-example-p {
                     font-size: 2.5rem;
                     font-weight: normal;
                     /* 40 pixels */
                 }
+
                 .top-cloud {
 
                     position: absolute;
@@ -504,7 +506,8 @@ this would be good for a nav bar or something that always should go with the use
             <div class="profile">
                 <img src="" alt="">
                 <h2>Hello.</h2>
-                <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
+                <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla
+                    distinctio.</p>
             </div>
             <hr>
             <div class="skills">
@@ -523,7 +526,8 @@ this would be good for a nav bar or something that always should go with the use
                         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP._NcVHMs9TPXyxaar5AIqIwHaFj%26pid%3DApi&f=1"
                         alt="taiko">
                     <h3>Taiko</h3>
-                    <p class=>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis
+                    <p class=>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus
+                        quis
                         mauris.
                         Curabitur wisi, quisque vel eu, rutrum nam.</p>
                 </div>
@@ -536,14 +540,14 @@ this would be good for a nav bar or something that always should go with the use
                         text-align: left;
                         /* aligns text to the left */
                         display: inline-block;
-                
+
                     }
-                
+
                     .guitar {
                         width: 25%;
                         float: left;
                     }
-                
+
                     /* m */
                     .taiko {
                         width: 25%;
@@ -551,7 +555,7 @@ this would be good for a nav bar or something that always should go with the use
                     }
                 </style>
             </div>
-        
+
     </main>
 </body>
 
