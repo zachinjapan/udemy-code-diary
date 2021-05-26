@@ -79,6 +79,12 @@
         </ol>
     </div>
     <main>
+        <!-- how to debug css -->
+        
+        <!--console command to show errors-->
+        <!-- -elements to inspect the part that isn't looking how you want it to     -->
+        <!-- -order of priority = in ne, internal, then external      -->
+        <!-- -best practice is to have all styles in external css-->
 
         <!--auto closing tags-->
         <br> <!-- break-->
@@ -188,6 +194,26 @@
 
         <div id="css-basics"></div>
         <h3 class="css-time-heading">CSS TIME!</h3>
+                <!--console command to show errors-->
+                
+                <!-- -elements to inspect the part that isn't looking how you want it to     -->
+                <!-- -order of priority = in ne, internal, then external      -->
+                <!-- -best practice is to have all styles in external css-->
+                
+                <!-- css syntax -->
+                
+                <!-- selector {prperty:value;) -->
+                <!-- best practice is to have all styles in external css -->
+                <!-- best practice is to have properties in alphabetical order -->
+                
+                <!-- types of selectors -->
+                
+                <!-- tag { style} - weakest, affects anything with that tag -->
+                
+                <!-- .class {style} -->
+                <!--stronger than tag selector, used when you want to only change a 1- a few elements in the same way-->
+                <!--its posible to use two classes on the same element -->
+
         <style>
             .css-time-heading {
                 text-align: center;
@@ -270,6 +296,38 @@
         </div>
         <img src="images/iu.gif" alt="css box">
         <div id="display-property"></div>
+<!-- display property -->
+
+<!-- display:inline -->
+<!-- Displays an element as an inlinne element ( like span). Any height and width properties will have no effect -->
+
+<!-- display:block -->
+<!-- Displays an element as a block element ( like p). It starts on a new line, and takes up the whole width -->
+
+<!-- display:inline-block -->
+<!-- Displays an element as an in ne-level block container. The element itself is formatted as an inline element, but you can apply height and width values -->
+
+<!-- display:none -->
+<!-- The element is completely removed rather than using this use visability: hidden to make elements act as placeholders -->
+
+<!------------------------------------------------------->
+
+<!-- css position property -->
+<!-- static -->
+<!-- go with the normal html r es. (default for any html without css) -->
+
+<!-- relative -->
+<!-- posiion the element that we select releative to how it would have been. (with margins) -->
+<!-- when you move an element the other elements still pretend you didnt move anything -->
+
+<!-- absolute -->
+<!-- postion element relative to it's parent -->
+<!-- does affect the flow of the elements -->
+
+<!-- fixed -->
+<!-- fixed to position of website. if you scroll it always shows
+this would be good for a nav bar or something that always should go with the user as they scroll -->
+
         <div>
             <div class="box-1">
                 <style>
@@ -366,6 +424,19 @@
             </div>
         </div>
 
+        <!-- font styles -->
+        
+        <!-- serif  -->
+        <!-- sans serif (no feet) -->
+        <!-- monospace is easy to read for code. evenly spaced -->
+        <!-- cursive and fantasy aren't realy used -->
+        
+        <!-- font sizing -->
+        
+        <!-- font size in pixels is absolute but percentages em can be changed if the user incrases the font size globaly. -->
+        <!--100% = 16px, 1 em = 16px-->
+        <!-- em and percentages are em inherited. em (ex body = 2em and h1 = 5em the res ting text is 7em) -->
+        <!-- rem fixes that problem -->
         <div class="top-container">
             <img src="/images/css-my-site-images/cloud.png" alt="cloud" class="top-cloud">
             <h1 class="mountain-example-h1">Zach Stone</h1>
