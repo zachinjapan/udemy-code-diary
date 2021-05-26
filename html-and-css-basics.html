@@ -434,13 +434,22 @@ this would be good for a nav bar or something that always should go with the use
         <!-- monospace is easy to read for code. evenly spaced -->
         <!-- cursive and fantasy aren't realy used -->
         
-        <!-- font sizing -->
+        <!-- font-size -->
         
         <!-- font size in pixels is absolute but percentages em can be changed if the user incrases the font size globaly. -->
         <!--100% = 16px, 1 em = 16px-->
         <!-- em and percentages are em inherited. em (ex body = 2em and h1 = 5em the res ting text is 7em) -->
         <!-- rem fixes that problem -->
+<!-- font-weight -->
+<!-- controls the amount of bolding -->
+
 <!----------------------------------------------->
+
+<!-- float: -->
+<!-- makes the text wrap around the element -->
+<!-- clear: -->
+<!-- prevents anything from obstructing the side specified aka "the anti-float" -->
+<!-- often abused. only use when really necessary (wrapping text) not for layout properties -->
 
         <div class="top-container">
             <img src="/images/css-my-site-images/cloud.png" alt="cloud" class="top-cloud">
@@ -501,32 +510,46 @@ this would be good for a nav bar or something that always should go with the use
             <div class="skills">
                 <h2>My Skills.</h2>
                 <div class="skill-row">
-                    <img class="" src="" alt="">
-                    <h3>Lorem & Ipsum</h3>
-                    <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat
+                    <img class="guitar"
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7JQj2YkR4EfWjl0WGLkvAwHaLx%26pid%3DApi&f=1"
+                        alt="guitar">
+                    <h3>Guitar</h3>
+                    <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna
+                        lectus, erat
                         ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
                 </div>
                 <div class="skill-row">
-                    <img class="" src="" alt="">
-                    <h3>Lorem Ipsum Dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris.
+                    <img class="taiko"
+                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP._NcVHMs9TPXyxaar5AIqIwHaFj%26pid%3DApi&f=1"
+                        alt="taiko">
+                    <h3>Taiko</h3>
+                    <p class=>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis
+                        mauris.
                         Curabitur wisi, quisque vel eu, rutrum nam.</p>
                 </div>
-            </div>
-            <hr>
-            <div class="contact-me">
-                <h2>Get In Touch</h2>
-                <h3>Lorem ipsum dolor sit amet, non elit.</h3>
-                <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-                <a class="btn" href="mailto:name@email.com">CONTACT ME</a>
-            </div>
-            </div>
-        
-        <div class="bottom-container">
-            <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-            <a class="footer-link" href="https://twitter.com/">Twitter</a>
-            <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-            <p>© 2018 Name Surname.</p>
+                <style>
+                    .skill-row {
+                        width: 50%;
+                        position: relative;
+                        margin: 100px auto 100px auto;
+                        /* centers the element on the page */
+                        text-align: left;
+                        /* aligns text to the left */
+                        display: inline-block;
+                
+                    }
+                
+                    .guitar {
+                        width: 25%;
+                        float: left;
+                    }
+                
+                    /* m */
+                    .taiko {
+                        width: 25%;
+                        float: right;
+                    }
+                </style>
             </div>
         
     </main>
