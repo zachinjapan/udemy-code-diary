@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <!--head meta tags-->
-    <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
+        <!--head meta tags-->
+        <!--<meta charset="UTF-8">　is the standard text character set. wrong text encoder leads to 文字化け-->
+        <!-- <link rel="stylesheet" href="style.css">-->
+        <!--links a style sheet -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- favicon.cc to make a favicon -->
     <link rel="shortcut icon" type=".ico" href="/images/favicon.ico">
-    <!-- favicon.cc to make a favicon -->
-    <!-- <link rel="stylesheet" href="style.css">-->
-    <!--links a style sheet -->
+    <!-- google fonts style sheet for sacramento -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <!-- google fonts style sheet for sacramento -->
 
     <title>html and css basics</title>
 
@@ -83,7 +83,7 @@
         
         <!--console command to show errors-->
         <!-- -elements to inspect the part that isn't looking how you want it to     -->
-        <!-- -order of priority = in ne, internal, then external      -->
+        <!-- -order of priority = inline, internal, external      -->
         <!-- -best practice is to have all styles in external css-->
 
         <!--auto closing tags-->
@@ -194,25 +194,22 @@
 
         <div id="css-basics"></div>
         <h3 class="css-time-heading">CSS TIME!</h3>
-                <!--console command to show errors-->
-                
-                <!-- -elements to inspect the part that isn't looking how you want it to     -->
-                <!-- -order of priority = in ne, internal, then external      -->
-                <!-- -best practice is to have all styles in external css-->
-                
                 <!-- css syntax -->
                 
-                <!-- selector {prperty:value;) -->
+                <!-- selector {property:value;) -->
                 <!-- best practice is to have all styles in external css -->
                 <!-- best practice is to have properties in alphabetical order -->
                 
                 <!-- types of selectors -->
                 
                 <!-- tag { style} - weakest, affects anything with that tag -->
-                
+
                 <!-- .class {style} -->
                 <!--stronger than tag selector, used when you want to only change a 1- a few elements in the same way-->
                 <!--its posible to use two classes on the same element -->
+
+                <!--id -->
+                <!-- strongest class out of all. only can be used for one element per page (use with caution) -->
 
         <style>
             .css-time-heading {
@@ -221,11 +218,11 @@
         </style>
         <div>
             <h4>inline + internal (external)</h4>
-            <!--inline-->
+            <!--inline example-->
             <p style="background-color: powderblue ;">Lorem ipsum dolor sit amet
                 consectetur, adipisicing elit. Temporibus id cumque ipsa excepturi, et provident quidem sapiente, eius
                 facere voluptate eaque incidunt fuga delectus illum magnam in accusamus quasi repellat!</p>
-            <!--internal/external-->
+            <!--internal/external example-->
             <!--
             internal
             style {
@@ -296,21 +293,23 @@
         </div>
         <img src="images/iu.gif" alt="css box">
         <div id="display-property"></div>
+<!----------------------------------------------->
+
 <!-- display property -->
 
 <!-- display:inline -->
-<!-- Displays an element as an inlinne element ( like span). Any height and width properties will have no effect -->
+<!-- Displays an element as an inline element (like span). Any height and width properties will have no effect -->
 
 <!-- display:block -->
 <!-- Displays an element as a block element ( like p). It starts on a new line, and takes up the whole width -->
 
 <!-- display:inline-block -->
-<!-- Displays an element as an in ne-level block container. The element itself is formatted as an inline element, but you can apply height and width values -->
+<!-- Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values -->
 
 <!-- display:none -->
 <!-- The element is completely removed rather than using this use visability: hidden to make elements act as placeholders -->
 
-<!------------------------------------------------------->
+<!----------------------------------------------->
 
 <!-- css position property -->
 <!-- static -->
@@ -327,6 +326,8 @@
 <!-- fixed -->
 <!-- fixed to position of website. if you scroll it always shows
 this would be good for a nav bar or something that always should go with the user as they scroll -->
+
+<!----------------------------------------------->
 
         <div>
             <div class="box-1">
@@ -423,6 +424,8 @@ this would be good for a nav bar or something that always should go with the use
                 </style>
             </div>
         </div>
+    
+<!----------------------------------------------->
 
         <!-- font styles -->
         
@@ -437,6 +440,8 @@ this would be good for a nav bar or something that always should go with the use
         <!--100% = 16px, 1 em = 16px-->
         <!-- em and percentages are em inherited. em (ex body = 2em and h1 = 5em the res ting text is 7em) -->
         <!-- rem fixes that problem -->
+<!----------------------------------------------->
+
         <div class="top-container">
             <img src="/images/css-my-site-images/cloud.png" alt="cloud" class="top-cloud">
             <h1 class="mountain-example-h1">Zach Stone</h1>
