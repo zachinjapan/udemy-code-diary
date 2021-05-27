@@ -14,6 +14,8 @@
     <!-- google fonts style sheet for sacramento -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <!-- author -->
+    <meta http-equiv="author" content="Zach Stone" />
 
     <title>html-and-css</title>
 
@@ -26,9 +28,6 @@
         <a href="index.html">
             <h5>home page </h5>
         </a>
-
-        <a href="cheat-sheet.html" target="_blank">
-            <h5> cheat sheet</h5>
 
         </a>
 
@@ -117,6 +116,10 @@
         <strong> <a href="https://www.google.com"> this is a (strong) link to google </a></strong> <br> <br>
 
         <hr>
+        
+        <!-- table -->
+        <!-- colspan ="" (use this to increase the cell to more than one row) -->
+        <!-- useful elements are <thead> <tbody> and <tfoot> -->
 
         <div id="table"></div>
         <table>
@@ -141,6 +144,7 @@
                         </tfoot>
                     </table>
                 </td>
+            </tr>
                 <td>
                     <table cellspacing="10">
                         <tr>
@@ -148,12 +152,15 @@
                             <td> ★★★★★ </td>
                         </tr>
                         <tr>
-                            <td> this is a table data </td>
+                            <td rowspan="2"> this is a rowspan of 2 </td>
                             <td> ★★★★★ </td>
                         </tr>
                         <tr>
-                            <td> this is a table data </td>
+                            
                             <td> ★★★★★ </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">this is a colspan of three tree tds</td>
                         </tr>
                         </tbody>
                         <tfoot>
@@ -185,11 +192,15 @@
             <input type="radio" name="agree" value="yes">yes<br>
             <label> Do you feel happy? </label>
             <input type="range" name="" value=""><br>
+            <!-- the bellow is grouped in fieldset -->
+            <fieldset>
+                <legend>contact me</legend>
             <label> Can I email you? </label>
             <input type="email" name="" value=""><br>
             <label> Your Message</label>
             <textarea name="" id="" cols="30" rows="10"></textarea><br>
             <input type="submit" name="">
+            </fieldset>
         </form>
 
         <div id="css-basics"></div>
@@ -263,6 +274,9 @@
                 }
             </style>
         </div>
+        <!-- iframe (used for putting a window into another page) -->
+        <iframe width="450" height="450" src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed"
+            frameborder="0"></iframe>
         <div id="box-model"></div>
         <div>
             <h4>box model</h4>
