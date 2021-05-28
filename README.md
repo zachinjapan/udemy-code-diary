@@ -1,5 +1,6 @@
 # code-diary
-My deepest and darkest code.
 
-It meant to be read top to bottom. (hence the heavy amount of comments)
+Everything I have learned organized into one website.
+
+Please read the code from top to bottom and use the website as a refrence.
 
