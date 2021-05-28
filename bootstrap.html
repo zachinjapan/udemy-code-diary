@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
+    <title>TinDog</title>
     <!-- bootstrap links -->
     <!-- it's a cdn or content delivery network (content that is hosted in many places around the world to incrase speed when accesing the files) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-</head>
-<body>
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- what is bootstrap -->
     
     <!-- pre-styled elements that are responsive on any device -->
@@ -24,8 +22,170 @@
     <!-- wire frame -->
     <!-- scetch out the website -->
     <!-- https://sneakpeekit.com -->
-    <!-- mock up -->
-    <!-- make a fake version of a website -->
+    </head>
+    
+    <body>
+        <!--  color themes -->
+    
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+        <button type="button" class="btn btn-link">Link</button>
+    
+        <!----------------------------------------------->
+        <section id="title">
+    
+            <!-- Nav Bar -->
+    
+            <!-- navbar classes -->
+    
+            <!-- navbar-brand for your company, product, or project name. -->
+            <!-- navbar-nav for a full-height and lightweight navigation (including support for dropdowns). -->
+            <!-- .navbar-toggler for use with our collapse plugin and other navigation toggling behaviors. -->
+            <!-- Flex and spacing utilities for any form controls and actions. -->
+            <!-- .navbar-text for adding vertically centered strings of text. -->
+            <!-- .collapse.navbar-collapse for grouping and hiding navbar contents by a parent breakpoint. -->
+            <!-- Add an optional .navbar-scroll to set a max-height and scroll expanded navbar content. -->
+    
+    
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+                <a class="navbar-brand" href="">Brand Name</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="collapsed-data"
+                    aria-controls="collapsed-data" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- expand- -->
+                <!--g vs md vs sm -->
+                <!-- tells the browser when to expand lg = only horizontal on large screens -->
+                <div class="collapse navbar-collapse" id="collapsed-data">
+                    <!-- class to set a emphasized element in the nav bar -->
+                    <!-- burger toggler for small screens -->
+                    <ul class="navbar-nav ml-auto">
+                        <li class="navbar-item"> <a href="">Contact</a></li>
+                        <li class="navbar-item"> <a href="">Contact</a></li>
+                        <li class="navbar-item"> <a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <!----------------------------------------------->
+    
+    
+            <!-- Title -->
+    
+            <div>
+                <h1>Meet new and interesting dogs nearby.</h1>
+                <button type="button">Download</button>
+                <button type="button">Download</button>
+            </div>
+            <div>
+                <img src="images/bootstrap-tindog-images/iphone6.png" alt="iphone-mockup">
+            </div>
+    
+        </section>
+    
+    
+        <!-- Features -->
+    
+        <section id="features">
+    
+            <h3>Easy to use.</h3>
+            <p>So easy to use, even your dog could do it.</p>
+    
+            <h3>Elite Clientele</h3>
+            <p>We have all the dogs, the greatest dogs.</p>
+    
+            <h3>Guaranteed to work.</h3>
+            <p>Find the love of your dog's life or your money back.</p>
+    
+        </section>
+    
+    
+        <!-- Testimonials -->
+    
+        <section id="testimonials">
+    
+            <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+            <img src="bootstrap-tindog-images/images/dog-img.jpg" alt="dog-profile">
+            <em>Pebbles, New York</em>
+    
+            <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+                                                                                    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+                                                                                    <em>Beverly, Illinois</em> -->
+    
+        </section>
+    
+    
+        <!-- Press -->
+    
+        <section id="press">
+            <img src="bootstrap-tindog-images/images/techcrunch.png" alt="tc-logo">
+            <img src="bootstrap-tindog-images/images/tnw.png" alt="tnw-logo">
+            <img src="bootstrap-tindog-images/images/bizinsider.png" alt="biz-insider-logo">
+            <img src="bootstrap-tindog-images/images/mashable.png" alt="mashable-logo">
+    
+        </section>
+    
+    
+        <!-- Pricing -->
+    
+        <section id="pricing">
+    
+            <h2>A Plan for Every Dog's Needs</h2>
+            <p>Simple and affordable price plans for your and your dog.</p>
+    
+    
+            <h3>Chihuahua</h3>
+            <h2>Free</h2>
+            <p>5 Matches Per Day</p>
+            <p>10 Messages Per Day</p>
+            <p>Unlimited App Usage</p>
+            <button type="button">Sign Up</button>
+    
+    
+            <h3>Labrador</h3>
+            <h2>$49 / mo</h2>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button">Sign Up</button>
+    
+    
+            <h3>Mastiff</h3>
+            <h2>$99 / mo</h2>
+            <p>Pirority Listing</p>
+            <p>Unlimited Matches</p>
+            <p>Unlimited Messages</p>
+            <p>Unlimited App Usage</p>
+            <button type="button">Sign Up</button>
+    
+        </section>
+    
+    
+        <!-- Call to Action -->
+    
+        <section id="cta">
+    
+            <h3>Find the True Love of Your Dog's Life Today.</h3>
+            <button type="button">Download</button>
+            <button type="button">Download</button>
+    
+        </section>
+    
+    
+        <!-- Footer -->
+    
+        <footer id="footer">
+    
+            <p>© Copyright 2018 TinDog</p>
+    
+        </footer>
+
 </body>
 
 </html>
