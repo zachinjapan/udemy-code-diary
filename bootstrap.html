@@ -7,9 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bootstrap</title>
     <!-- bootstrap links -->
-    <!-- it's a cdn or content delivery network (content that is hosted in many places around the world to incrase speed when accesing the files) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- font-family: 'Montserrat', sans-serif; -->
+    <!-- font-family: 'Ubuntu', sans-serif; -->
+    
+    
+    <!----------------------------------------------->
+
     <!-- what is bootstrap -->
     
     <!-- pre-styled elements that are responsive on any device -->
@@ -98,11 +106,25 @@
             <!-- last col-sm-12 is unecessary -->
             <div class="col-lg-3 col-md-4" style="background-color:khaki; border: 1px solid;">lg 3 md 4 sm 12</div>
         </div>
-            <!----------------------------------------------->
-        
-        
+        <!----------------------------------------------->
+        <!-- basic container -->
+        <!-- jumps from lg to md to sm -- -->
+
+        <div class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro repellendus hic voluptas eius nesciunt? Tempora
+            molestiae molestias iste corporis commodi eos laudantium, minima quae voluptates, dolor numquam nulla nisi velit.
+        </div>
+        <!--fluid container  -->
+        <!-- always goes to 100% of the wdith -->
+        <div class="container-fluid" style="background-color: lightblue;">Lorem ipsum dolor sit amet
+            consectetur, adipisicing
+            elit. Tempora atque illo, dicta fuga eos, ab sint reprehenderit ad laudantium commodi ea voluptatum veritatis
+            facere, eveniet minima accusantium repellat distinctio doloribus.</div>
+
+        <!----------------------------------------------->
             <!-- Udemy "tindog" site -->
         <section id="title">
+        <div class="container-fluid container-fluid-tindog">
     
             <!-- Nav Bar -->
     
@@ -117,8 +139,8 @@
             <!-- Add an optional .navbar-scroll to set a max-height and scroll expanded navbar content. -->
     
     
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
-                <a class="navbar-brand" href="">Brand Name</a>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="">Tindog</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=#collapsed-data
                     aria-controls="collapsed-data" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -129,7 +151,7 @@
                 <div class="collapse navbar-collapse" id="collapsed-data">
                     <!-- class to set a emphasized element in the nav bar -->
                     <!-- burger toggler for small screens -->
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav lg-auto">
                         <li class="navbar-item"> <a href="">Contact</a></li>
                         <li class="navbar-item"> <a href="">Contact</a></li>
                         <li class="navbar-item"> <a href="">Contact</a></li>
@@ -141,17 +163,39 @@
 
     
             <!-- Title -->
-    
-            <div>
-                <h1>Meet new and interesting dogs nearby.</h1>
-                <button type="button">Download</button>
-                <button type="button">Download</button>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="tindog-title-h1">Meet new and interesting dogs nearby.</h1>
+                <style>
+                    .tindog-title-h1 {
+                        font-family: 'Montserrat-bold', sans-serif;
+                        size: 3rem;
+                        line-height: 1.5;
+                    }
+
+                </style>
+                <button type="button" class="btn btn-dark btn-lg"> Download</button>
+                <button type="button" class="btn btn-outline-light btn-lg">Download</button>
             </div>
-            <div>
+            <div class="col-lg-6">
                 <img src="images/bootstrap-tindog-images/iphone6.png" alt="iphone-mockup">
             </div>
+        </div>
+        </div>
+
     
         </section>
+        <style>
+            #title {
+                background-color: #ff4c68;
+        
+            }
+        
+            .container-fluid-tindog {
+                padding: 3% 15%;
+            }
+        </style>
+
     
     
         <!-- Features -->
@@ -166,9 +210,7 @@
     
             <h3>Guaranteed to work.</h3>
             <p>Find the love of your dog's life or your money back.</p>
-    
         </section>
-    
     
         <!-- Testimonials -->
     
@@ -178,8 +220,9 @@
             <img src="images/bootstrap-tindog-images/dog-img.jpg" alt="dog-profile">
             <em>Pebbles, New York</em>
     
-            <!-- <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
-                                                                                    <img class="testimonial-image" src="images/lady-img.jpg" alt="lady-profile">
+            <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life.
+                I think.</h2>
+            <img class="testimonial-image" src="images/bootstrap-tindog-images/lady-img.jpg" alt="lady-profile">
                                                                                     <em>Beverly, Illinois</em> -->
     
         </section>
