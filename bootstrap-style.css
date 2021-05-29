@@ -23,6 +23,12 @@
 }
 /* makes the text for the entire div montserrat */
 
+h2 {
+    font-family: 'Montserrat-bold', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
 h3 {
     font-family:  'Montserrat-black', sans-serif;
 }
@@ -30,6 +36,7 @@ h3 {
 p {
     color: gray;
 }
+
 
 
 
@@ -92,7 +99,9 @@ p {
 }
 
 .icon {
-    padding-bottom: 5%;
+    color: #ef7182;
+    margin-bottom: 1rem;
+
 }
 
 .icon:hover {
@@ -100,3 +109,36 @@ p {
 }
 
 
+/* testimonials */
+
+#testimonials {
+    text-align: center;
+    background-color: #ef7182;
+    color:#fff;
+}
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    /* makes the image a circle */
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+
+
+/* press */
+
+#press {
+    background-color: #ef7182;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
