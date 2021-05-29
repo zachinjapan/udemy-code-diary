@@ -1,0 +1,42 @@
+/* bootstrap test section */
+
+.fixed-header {
+    text-align: center;
+    position: fixed;
+    right: 20px;
+    background-color: lightgray;
+    padding: 10px 30px 10px 10px;
+    opacity: 0.8;
+    text-decoration: solid;
+}
+
+
+
+
+
+/* Tindog class */
+
+.tindog-body {
+    font-family: 'Montserrat-bold', sans-serif;
+}
+
+.tindog-title-h1 {
+    font-family: 'Montserrat-bold', sans-serif;
+    size: 3rem;
+    line-height: 1.5;
+}
+
+
+.container-fluid-tindog {
+    padding: 3% 15%;
+}
+
+
+
+/* Tindog ID */
+
+
+#title {
+    background-color: #ff4c68;
+
+}
