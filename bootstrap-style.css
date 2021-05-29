@@ -9,20 +9,59 @@
     opacity: 0.8;
     text-decoration: solid;
 }
+/* -------------------- */
 
+/* Tindog */
 
+/* -------------------- */
 
+/* Title Slide */
+.navbar {
+    padding: 0 0 4.5rem ;
+}
 
+.navbar-brand {
+    font-family: ubuntu;
+    font-size: 2rem;
+    font-weight: bold;
+}
 
-/* Tindog class */
+.nav-item {
+    padding: 0 18px ;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Montserrat-light', sans-serif;
+}
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+.title-image{
+    width:60%;
+    transform: rotate(25deg);
+    /* rotate images */
+    position: relative
+
+}
+
+/* body */
 
 .tindog-body {
     font-family: 'Montserrat-bold', sans-serif;
 }
+/* makes the text for the entire div montserrat */
 
-.tindog-title-h1 {
-    font-family: 'Montserrat-bold', sans-serif;
-    size: 3rem;
+#title {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+#tindog-title-h1 {
+    font-family: 'Montserrat-black', sans-serif;
+    font-size: 3.5rem;
     line-height: 1.5;
 }
 
@@ -32,11 +71,3 @@
 }
 
 
-
-/* Tindog ID */
-
-
-#title {
-    background-color: #ff4c68;
-
-}

@@ -135,7 +135,7 @@
     
     
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" href="">Tindog</a>
+                <a class="navbar-brand" href="">tindog</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=#collapsed-data
                     aria-controls="collapsed-data" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -146,10 +146,10 @@
                 <div class="collapse navbar-collapse" id="collapsed-data">
                     <!-- class to set a emphasized element in the nav bar -->
                     <!-- burger toggler for small screens -->
-                    <ul class="navbar-nav lg-auto">
-                        <li class="navbar-item"> <a href="">Contact</a></li>
-                        <li class="navbar-item"> <a href="">Contact</a></li>
-                        <li class="navbar-item"> <a href="">Contact</a></li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"> <a class="nav-link" href="">Contact</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="">Pricing</a></li>
+                        <li class="nav-item"> <a class="nav-link" href="">Download</a></li>
                     </ul>
                 </div>
             </nav>
@@ -160,12 +160,12 @@
             <!-- Title -->
         <div class="row">
             <div class="col-lg-6">
-                <h1 class="tindog-title-h1">Meet new and interesting dogs nearby.</h1>
-                <button type="button" class="btn btn-dark btn-lg"> Download</button>
-                <button type="button" class="btn btn-outline-light btn-lg">Download</button>
+                <h1 id="tindog-title-h1">Meet new and interesting dogs nearby.</h1>
+                <button type="button" class="btn btn-dark btn-lg download-button"> Download</button>
+                <button type="button" class="btn btn-outline-light btn-lg download-button">Download</button>
             </div>
             <div class="col-lg-6">
-                <img src="images/bootstrap-tindog-images/iphone6.png" alt="iphone-mockup">
+                <img class="title-image" src="images/bootstrap-tindog-images/iphone6.png" alt="iphone-mockup">
             </div>
         </div>
         </div>
@@ -177,15 +177,22 @@
         <!-- Features -->
     
         <section id="features">
-    
-            <h3>Easy to use.</h3>
-            <p>So easy to use, even your dog could do it.</p>
-    
-            <h3>Elite Clientele</h3>
+            <div class="row">
+                
+            <div class="col-lg-4">
+                <h3> ✅ Easy to use.</h3>
+                <p>So easy to use, even your dog could do it.</p>
+            </div>
+
+            <div class="col-lg-4">
+                <h3> Ⓞ Elite Clientele</h3>
             <p>We have all the dogs, the greatest dogs.</p>
-    
-            <h3>Guaranteed to work.</h3>
-            <p>Find the love of your dog's life or your money back.</p>
+            </div>
+            <div class="col-lg-4">
+                <h3> ❤️ Guaranteed to work.</h3>
+                <p>Find the love of your dog's life or your money back.</p>
+            </div>
+            </div>
         </section>
     
         <!-- Testimonials -->
@@ -255,8 +262,8 @@
         <section id="cta">
     
             <h3>Find the True Love of Your Dog's Life Today.</h3>
-            <button type="button">Download</button>
-            <button type="button">Download</button>
+            <button type="button"> Download</button>
+            <button type="button"> Download</button>
     
         </section>
     
