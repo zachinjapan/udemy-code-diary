@@ -15,6 +15,24 @@
 
 /* -------------------- */
 
+
+/* body */
+
+.tindog-body {
+    font-family: 'Montserrat-bold', sans-serif;
+}
+/* makes the text for the entire div montserrat */
+
+h3 {
+    font-family:  'Montserrat-black', sans-serif;
+}
+
+p {
+    color: gray;
+}
+
+
+
 /* Title Slide */
 .navbar {
     padding: 0 0 4.5rem ;
@@ -47,12 +65,8 @@
 
 }
 
-/* body */
+/* top section */
 
-.tindog-body {
-    font-family: 'Montserrat-bold', sans-serif;
-}
-/* makes the text for the entire div montserrat */
 
 #title {
     background-color: #ff4c68;
@@ -72,10 +86,17 @@
 
 /* 3 icon section(aka features)*/
 
-.tindog-features:hover {
-    color: #ff4c68;
+.tindog-features {
+    text-align: center;
+    padding: 5%;
 }
 
+.icon {
+    padding-bottom: 5%;
+}
 
+.icon:hover {
+    color: #ff4c68;
+}
 
 
