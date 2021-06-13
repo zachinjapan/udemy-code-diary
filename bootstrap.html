@@ -75,7 +75,7 @@
         </div>
         
         <!-- sizing with -# -->
-        <div class="row">
+         <div class="row">
             <div class="col-6" style="background-color:aliceblue; border: 1px solid;"> col-6</div>
             <div class="col-3" style="background-color:aliceblue; border: 1px solid;"> col-3</div>
             <div class="col-3" style="background-color:aliceblue; border: 1px solid;"> col-3</div>
@@ -121,11 +121,11 @@
                 </div>
                 <div class="carousel-item" style="background-color: yellow;">
                     <img src="..." class="d-block w-100" alt="...">
-                </div>
+                  </div>
                 <div class="carousel-item" style="background-color:green;">
                     <img src="..." class="d-block w-100" alt="...">
                 </div>
-            </div>
+              </div>
             <!-- buttons to target the carousel -->
             <!-- data-bs-targer -->
             <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
@@ -153,6 +153,49 @@
                 <div class="card-footer">card footer</div>
             </div>
         </div>
+
+        <!-- not sure how to make the div seperate from the tindog site -->
+        <!--CSS Z-Index-->
+        <div class="css-z-index">
+        <div class="css-z-div red">red</div>
+        <div class="css-z-div yellow"> yellow</div>
+        <div class="css-z-div blue">blue</div>
+
+        <style>
+            .css-z-index {
+                position: absolute;
+            }
+            .css-z-div {
+                height: 100px;
+                width: 100px;
+                border: 1px solid;
+                  position: absolute;
+            }
+
+            .red {
+                background-color: red;
+                z-index: 1;
+                /* pushes red above everything else */
+                /* z-index: -1 makes it behind everything else */
+                /* default z-index for all elements is zero */
+                /* Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+                and flex items (elements that are direct children of display:flex elements). */
+            }
+
+            .yellow {
+                background-color: yellow;
+                left: 20px;
+                top: 20px;
+            }
+
+            .blue {
+                background-color: blue;
+                left: 40px;
+                top: 40px;
+            }
+        </style>
+        </div>
+
 
 
         <!----------------------------------------------->
