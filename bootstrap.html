@@ -155,6 +155,8 @@ test
         </button>
     </div>
 
+    <!----------------------------------------------->
+
     <!-- cards -->
     <div class="card-deck"></div>
     <!--  -->
@@ -169,6 +171,8 @@ test
         </div>
     </div>
 
+    <!----------------------------------------------->
+
     <!--CSS Z-Index-->
 
     <div class="css-z-index">
@@ -178,7 +182,9 @@ test
 
         <style>
             .css-z-index {
-                position: absolute;
+                position: relative;
+                height: 200px;
+                width: 200px;
             }
 
             .css-z-div {
@@ -211,6 +217,42 @@ test
             }
         </style>
     </div>
+
+    <!----------------------------------------------->
+
+    <!-- media query breakpoints -->
+
+    <!-- used to make the page responsive with css -->
+
+    <!-- /* format */ -->
+    <!-- /* @media + <type> + feature */ -->
+
+    <!-- text turns red only when the user prints the site    -->
+    <h1 class="h1-print">Hello world</h1>
+
+    <style>
+        @media print {
+            .h1-print {
+                color: red;
+            }
+        }
+    </style>
+
+    <!-- text turns blue and gets bigger when the viewport's width is between 900px and 1000px   -->
+    <h1 class="h1-screen">Hello world</h1>
+
+    <style>
+        .h1-screen {
+            color: red;
+        }
+
+        @media (min-width:900px) and (max-width:1000px) {
+            .h1-screen {
+                font-size: 50px;
+                color: blue;
+            }
+        }
+    </style>
 </body>
 
 </html>
