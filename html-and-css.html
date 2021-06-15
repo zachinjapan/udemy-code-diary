@@ -114,7 +114,7 @@
         <strong> <a href="https://www.google.com"> this is a (strong) link to google </a></strong> <br> <br>
 
         <hr>
-        
+
         <!-- table -->
         <!-- colspan ="" (use this to increase the cell to more than one row) -->
         <!-- useful elements are <thead> <tbody> and <tfoot> -->
@@ -143,35 +143,36 @@
                     </table>
                 </td>
             </tr>
-                <td>
-                    <table cellspacing="10">
-                        <tr>
-                            <td> this is a table data </td>
-                            <td> ★★★★★ </td>
-                        </tr>
-                        <tr>
-                            <td rowspan="2"> this is a rowspan of 2 </td>
-                            <td> ★★★★★ </td>
-                        </tr>
-                        <tr>
-                            
-                            <td> ★★★★★ </td>
-                        </tr>
-                        <tr>
-                            <td colspan="3">this is a colspan of three tree tds</td>
-                        </tr>
-                        </tbody>
-                        <tfoot>
+            <td>
+                <table cellspacing="10">
+                    <tr>
+                        <td> this is a table data </td>
+                        <td> ★★★★★ </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2"> this is a rowspan of 2 </td>
+                        <td> ★★★★★ </td>
+                    </tr>
+                    <tr>
 
-                        </tfoot>
-                    </table>
-                </td>
+                        <td> ★★★★★ </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">this is a colspan of three tree tds</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+
+                    </tfoot>
+                </table>
+            </td>
         </table>
 
         <hr>
+        <!-- form class "" action="mailto:burgerking@gmail.com" method="POST" This opens the info as an email in a local client-->
         <div id="form"></div>
         <form class "" action="index.html" method="POST">
-            <!-- form class "" action="mailto:burgerking@gmail.com" method="POST" This opens the info as an email in a local client-->
+
             <label>Your Name:</label>
             <input type="text" name="" value="">
             <label>Password:</label>
@@ -193,11 +194,11 @@
             <!-- the below is grouped in a fieldset -->
             <fieldset>
                 <legend>contact me</legend>
-            <label> Can I email you? </label>
-            <input type="email" name="" value=""><br>
-            <label> Your Message</label>
-            <textarea name="" id="" cols="30" rows="10"></textarea><br>
-            <input type="submit" name="">
+                <label> Can I email you? </label>
+                <input type="email" name="" value=""><br>
+                <label> Your Message</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                <input type="submit" name="">
             </fieldset>
         </form>
 
@@ -241,6 +242,7 @@
         </div>
         <div>
             <h4>change default css for hr</h4>
+            <!--height 0 px = no box, border style none = remove all borders, border top style bring just the top line back-->
             <hr style="border-color:gray;
                 height: 0px; 
                 border-style: none;
@@ -248,7 +250,6 @@
                 border-width: 5px;
                 width: 10%;
                 ">
-            <!--height 0 pix = no box, border style none = remove all borders, border top style bring just the top line back-->
         </div>
         <div>
 
@@ -289,12 +290,11 @@
                         background-color: seagreen;
                         width: 100%;
                         height: 100%;
-                        /* makes the width of the box that the p is contained in 50% */
-                        border-style: solid;
                         /* shows border */
+                        border-style: solid;
                         border-color: rgb(189, 18, 18);
-                        padding: 50px;
                         /* padding betwen content and border */
+                        padding: 50px;
                         margin-top: 10px;
                         margin-right: 10px;
                         margin-bottom: 10px;
@@ -409,7 +409,7 @@
                 </style>
             </div>
             <div class="box-2-pp">
-                <style> 
+                <style>
                     .box-2-pp {
                         height: 200px;
                         width: 200px;
@@ -488,10 +488,8 @@
                     width: 10%;
                     font-size: 5rem;
                     position: relative;
+                    /* makes the margin auto fix to center of screen */
                     margin: 50px auto 0 auto
-                        /* makes the margin auto fix to center of screen */
-
-
                 }
 
                 .mountain-example-p {
@@ -547,8 +545,8 @@
                     .skill-row {
                         width: 50%;
                         position: relative;
-                        margin: 100px auto 100px auto;
                         /* centers the element on the page */
+                        margin: 100px auto 100px auto;
                         text-align: left;
                         /* aligns text to the left */
                         display: inline-block;

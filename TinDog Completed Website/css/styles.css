@@ -1,10 +1,14 @@
-
 body {
   font-family: "Montserrat";
   text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat-Bold";
 }
 
@@ -27,7 +31,7 @@ p {
 
 /* Containers */
 
-.container-fluid{
+.container-fluid {
   padding: 7% 15%;
 }
 
@@ -166,12 +170,15 @@ p {
   margin: 20px 10px;
 }
 
+/* makes the title section look better on small devices */
 @media (max-width: 1028px) {
+
 
   #title {
     text-align: center;
   }
 
+  /* undoes the rotation and puts the image back as a seperate element */
   .title-image {
     position: static;
     transform: rotate(0);

@@ -76,13 +76,13 @@ test
 
     <!-- basic sizing -->
     <div class="row">
+        <!-- col= collumn  -->
         <div class="col" style="background-color: aliceblue; border: 1px solid;">
             Left col
         </div>
         <div class="col" style="background-color:aliceblue; border: 1px solid;">
             right col
         </div>
-        <!-- col= collumn  -->
     </div>
 
     <!-- sizing with -# -->
@@ -93,10 +93,10 @@ test
     </div>
 
     <!-- responsive sizing -->
+    <!-- 6 sizing from medium sized browsers upwards (smartphone would be two 12s) -->
     <div class="row">
         <div class="col-md-6" style="background-color:lightgreen; border: 1px solid;">col-md-6</div>
         <div class="col-md-6" style="background-color:lightgreen; border: 1px solid;">col-md-6</div>
-        <!-- 6 sizing from medium sized browsers upwards (smartphone would be two 12s) -->
     </div>
     <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-12" style="background-color:khaki; border: 1px solid;">lg 3 md 4 sm 12
@@ -130,9 +130,9 @@ test
         <!-- data-interval = how fast the carousel moves -->
         <!-- data-pause = to stop the carousel movement -->
         <div class="carousel-inner">
+            <!-- one carousel class has to have the ..active class to make it the default -->
             <div class="carousel-item active" style="background-color: red;">
                 <img src="..." class="d-block w-100" alt="...">
-                <!-- one carousel class has to have the ..active class to make it the default -->
             </div>
             <div class="carousel-item" style="background-color: yellow;">
                 <img src="..." class="d-block w-100" alt="...">
@@ -144,10 +144,10 @@ test
         <!-- buttons to target the carousel -->
         <!-- data-bs-targer -->
         <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <!-- aria deals with making a website accesible to those with disabilites. hidden = not read out loud for the user -->
-            <span class="visually-hidden">Previous</span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <!-- this tells the browser to tell the user previous -->
+            <span class="visually-hidden">Previous</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -253,6 +253,24 @@ test
             }
         }
     </style>
+
+    <!----------------------------------------------->
+
+    <!-- code refactoring -->
+    <!-- D.R.Y (don't repeat yourself) -->
+
+    <!-- 1.Readability -->
+    <!-- using comments  -->
+
+    <!-- 2.Modularity -->
+    <!--  -->
+
+    <!-- 3.Efficiency -->
+    <!--  -->
+
+    <!-- 4.Length -->
+    <!-- not as important -->
+
 </body>
 
 </html>
