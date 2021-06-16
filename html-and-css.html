@@ -113,7 +113,9 @@
         <a href="https://www.google.com"> this is a link to google </a> <br>
         <strong> <a href="https://www.google.com"> this is a (strong) link to google </a></strong> <br> <br>
 
+
         <hr>
+
 
         <!-- table -->
         <!-- colspan ="" (use this to increase the cell to more than one row) -->
@@ -272,6 +274,55 @@
                     background-color: aquamarine;
                 }
             </style>
+
+            <!----------------------------------------------->
+
+            <!-- color theory -->
+
+            <div>
+                <h1 class="h1-color-theory1">Blue </h1>
+                <h1 class="h1-color-theory2">Blue</h1>
+                <h1 class="h1-color-theory3">Blue</h1>
+                <h1 class="h1-color-theory4">Blue</h1>
+            </div>
+            <style>
+                /* basic color selection */
+                .h1-color-theory1 {
+                    color: blue;
+                }
+
+                /* hex code */
+                .h1-color-theory2 {
+                    color: #0000FF;
+                }
+
+                /* rgb */
+                .h1-color-theory3 {
+                    /* 'red green blue' */
+                    color: rgb(0, 0, 255)
+                }
+
+                /* hsl */
+
+                .h1-color-theory4 {
+                    /* color: hsl(hue, saturation, lightness); */
+                    color: hsl(240, 100%, 50%);
+                }
+            </style>
+
+            <!-- gradient -->
+            <div class="gradient"></div>
+
+            <style>
+                .gradient {
+                    width: 100%;
+                    height: 400px;
+                    background: linear-gradient(35deg, #CCFFFF, #FFCCCC)
+                }
+            </style>
+            <hr>
+
+            <!----------------------------------------------->
         </div>
         <!-- iframe (used for putting a window into another page) -->
         <iframe width="450" height="450" src="http://maps.google.co.uk/maps?q=moma+new+york&amp;output=embed"
@@ -512,58 +563,7 @@
                 }
             </style>
         </div>
-        <div class="middle-container">
-            <div class="profile">
-                <img src="" alt="">
-                <h2>Hello.</h2>
-                <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla
-                    distinctio.</p>
-            </div>
-            <hr>
-            <div class="skills">
-                <h2>My Skills.</h2>
-                <div class="skill-row">
-                    <img class="guitar"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7JQj2YkR4EfWjl0WGLkvAwHaLx%26pid%3DApi&f=1"
-                        alt="guitar">
-                    <h3>Guitar</h3>
-                    <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna
-                        lectus, erat
-                        ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
-                </div>
-                <div class="skill-row">
-                    <img class="taiko"
-                        src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP._NcVHMs9TPXyxaar5AIqIwHaFj%26pid%3DApi&f=1"
-                        alt="taiko">
-                    <h3>Taiko</h3>
-                    <p class=>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus
-                        quis
-                        mauris.
-                        Curabitur wisi, quisque vel eu, rutrum nam.</p>
-                </div>
-                <style>
-                    .skill-row {
-                        width: 50%;
-                        position: relative;
-                        /* centers the element on the page */
-                        margin: 100px auto 100px auto;
-                        text-align: left;
-                        /* aligns text to the left */
-                        display: inline-block;
 
-                    }
-
-                    .guitar {
-                        width: 25%;
-                        float: left;
-                    }
-
-                    .taiko {
-                        width: 25%;
-                        float: right;
-                    }
-                </style>
-            </div>
 
     </main>
 </body>
