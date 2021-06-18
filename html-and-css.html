@@ -564,6 +564,58 @@
             </style>
         </div>
 
+        <!----------------------------------------------->
+
+        <!-- Refactoring -->
+
+        <!-- use comments in css to seperate the website by sections -->
+        <!-- if an element is unique to the page use a class -->
+        <!-- if the 2 classes have the same styling combine the classes -->
+        <!-- if there is something that is sitewide put it in the body EX text-align: center (don't mess with media queries) -->
+
+        <!-- selecting css styles -->
+
+        <!-- h1 {
+            color:red;
+        }
+            p {
+            color:red;
+            } -->
+
+        <!--h1, p {
+            color:red;
+        }  -->
+
+        <!-- parent + child -->
+
+        <!-- .class class {
+            styling
+        } -->
+
+
+        <!-- space = read from right to left  (parent + child)-->
+        <!-- no space = read from left to right -->
+
+        <div class="r-container">
+            <h1 class="r-title"> Hello World</h1>
+        </div>
+        <div class="r-container-fluid">
+            <h1 class="r-title"> Goodbye World</h1>
+        </div>
+
+        <!-- parent child -->
+        <style>
+            .r-container .r-title {
+                color: red;
+            }
+
+            h1.r-title {
+                color: blue;
+            }
+        </style>
+
+
+
 
     </main>
 </body>
