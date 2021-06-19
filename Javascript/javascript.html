@@ -63,18 +63,19 @@
         <!--basic string output-->
 
         <script>
-            // var message = "hello";
-            // var yourname = prompt("what is your name");
-            // alert(message + " " + yourname);
+            var message = "hello";
+            var yourname = prompt("what is your name");
+            alert(message + " " + yourname);
         </script>
 
         <!-- character count script -->
         <script>
-            var inputText = prompt("enter your text that is under 140 character");
+            var inputText = prompt("enter your message in under 140 character");
             var textLength = inputText.length;
             var charactersRemaining = 140 - textLength;
 
-            alert("You have entered " + textLength + " characters. " + "You have -" + charactersRemaining +
+            alert("Great job " + yourname + " You have entered " + textLength + " characters. " + "You have -" +
+                charactersRemaining +
                 " characters left.");
         </script>
 
