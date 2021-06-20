@@ -41,15 +41,7 @@
     </header>
     <main>
 
-        <!-- asking for name script -->
-
-        <script>
-            // var name = "zach";
-            // var yourname = prompt("what is your name");
-            // alert("my name is " + name + ", welcome to my website " + yourname + "!");
-        </script>
-
-        <!-- switching a to b script -->
+        <!-- switching a to b  -->
 
         <script>
             // var a = "3";
@@ -60,24 +52,29 @@
             // alert("a is " + a + " and b is " + b);
         </script>
 
-        <!--basic string output-->
+        <!--name/character count/ slice -->
+
+        <script>
+            // var message = "hello";
+            // var yourname = prompt("what is your name");
+            // alert(message + " " + yourname);
+            // var inputText = prompt("enter your message in under 140 character");
+            // var textLength = inputText.length;
+            // var charactersRemaining = 140 - textLength;
+            // alert("Great job " + yourname + " You have entered " + textLength + " characters. " + "You have -" +
+            //     charactersRemaining + " characters remaining." + " Your message is " + inputText.slice(0 - 140));
+        </script>
+
+        <!-- name -> lower/upper case  -->
 
         <script>
             var message = "hello";
             var yourname = prompt("what is your name");
-            alert(message + " " + yourname);
+            var capitalLetter = yourname.slice(0, 1).toUpperCase();
+            var lowerCaseletter = yourname.slice(1, 100).toLowerCase();
+            alert("Nice to meet you " + capitalLetter + lowerCaseletter + ".")
         </script>
 
-        <!-- character count script -->
-        <script>
-            var inputText = prompt("enter your message in under 140 character");
-            var textLength = inputText.length;
-            var charactersRemaining = 140 - textLength;
-
-            alert("Great job " + yourname + " You have entered " + textLength + " characters. " + "You have -" +
-                charactersRemaining +
-                " characters left.");
-        </script>
 
 
 
