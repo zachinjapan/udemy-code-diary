@@ -68,16 +68,78 @@
         <!-- name -> lower/upper case  -->
 
         <script>
-            var message = "hello";
-            var yourname = prompt("what is your name");
-            var capitalLetter = yourname.slice(0, 1).toUpperCase();
-            var lowerCaseletter = yourname.slice(1, 100).toLowerCase();
-            alert("Nice to meet you " + capitalLetter + lowerCaseletter + ".")
+            // var message = "hello";
+            // var yourname = prompt("what is your name");
+            // var capitalLetter = yourname.slice(0, 1).toUpperCase();
+            // var lowerCaseletter = yourname.slice(1, 100).toLowerCase();
+            // alert("Nice to meet you " + capitalLetter + lowerCaseletter + ".")
         </script>
 
+        <!-- dog age converter -->
 
+        <script>
+            // var dogAge = prompt("How old is your dog?");
+            // var humanAge = (dogAge - 2) * 4 + 21;
+            // alert("Your dog is " + humanAge + " people years old.");
+        </script>
 
+        <!-- increments and decrements -->
 
+        <script>
+            // var x = "1";
+            // // increase by 1
+            // x++;
+            // alert(x);
+            // // reduce by one
+            // x--;
+            // alert(x);
+            // // increase by 2
+            // x += 2;
+            // alert(x);
+            // // += ok -= ok /= ok *= ok
+        </script>
+
+        <!-- 1st type of function -->
+
+        <!-- function NAME () {} ;-->
+
+        <!-- calling the function -->
+
+        <!-- function name (); -->
+
+        <!-- 2nd type of function AKA something between () -->
+
+        <script>
+            // robot butler buying milk
+
+            function getMilk(money) {
+                console.log("leaveHouse");
+                console.log("moveRight");
+                console.log("moveRight");
+                console.log("moveUp");
+                console.log("moveUp");
+                console.log("moveUp");
+                console.log("moveUp");
+                console.log("moveRight");
+                console.log("moveRight");
+                // uses that second level of function
+                // rounds down
+                var purchasingPower = Math.floor(money / 2);
+                console.log("buy" + purchasingPower + " bottles of milk.")
+                console.log("moveLeft");
+                console.log("moveLeft");
+                console.log("moveDown");
+                console.log("moveDown");
+                console.log("moveDown");
+                console.log("moveDown");
+                console.log("moveLeft");
+                console.log("moveLeft");
+                console.log("enterHouse");
+                alert("I went to the store and bought " + purchasingPower + " bottles of milk.")
+            }
+            // calls the function and asks how much money and puts that amount in the second level of the function
+            getMilk(prompt("How much money do you have for milk?"));
+        </script>
 
     </main>
 
