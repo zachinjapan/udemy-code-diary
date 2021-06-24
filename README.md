@@ -1,4 +1,4 @@
-# code-diary
+# Udemy-code-diary
 
 Everything I have learned organized into one website.
 
