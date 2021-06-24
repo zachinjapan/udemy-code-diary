@@ -164,12 +164,22 @@
         <!-- bmi calculator -->
 
         <script>
-            function bmiCalculator(weight, height) {
-                var bmi = (weight / (height * height));
-                return Math.round(bmi);
-            }
-            var bmi = bmiCalculator(65, 1.8);
-            console.log(bmi);
+            // function bmiCalculator(weight, height) {
+            //     var bmi = (weight / (height * height));
+            //     return Math.round(bmi);
+            // }
+            // var bmi = bmiCalculator(prompt("what is your weight?"), prompt("what is your height?"));
+            // alert("your bmi is " + bmi);
+        </script>
+
+        <!-- dice roll -->
+
+        <script>
+            var randomNumber = Math.random();
+            randomNumber = randomNumber * 6;
+            // in order to show 6 and never 0
+            randomNumber = Math.floor(randomNumber) + 1;
+            alert("Your dice roll was a " + randomNumber);
         </script>
 
 
