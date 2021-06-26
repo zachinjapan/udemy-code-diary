@@ -249,7 +249,8 @@
             // }
         </script>
 
-        <!-- fizz buzz -->
+        <!-- fizz buzz IF ELSE LOOP-->
+
         <!-- if number is divisible by 3 then fizz, by 5 then buzz, if 3 and 5 fizzbuzz -->
         <!-- fizz buzz loop makes it go until there is a "range error" -->
 
@@ -292,6 +293,67 @@
             fizzBuzzLoop(); -->
         </script>
 
+        <script>
+            // fizz buzz while loop
+
+            var output = [];
+            var count = 1;
+            var i = 1;
+
+            while (i < 100) {
+                fizbuzz();
+            }
+
+            function fizbuzz() {
+                i++;
+                output.push(count);
+
+                if (count % 3 === 0 && count % 5 === 0) {
+                    console.log("fiz buzz");
+                    count++;
+                } else {
+                    if (count % 3 === 0) {
+                        console.log("fizz");
+                        count++;
+                    } else {
+                        if (count % 5 === 0) {
+                            console.log("buzz");
+                            count++;
+                        } else {
+                            console.log(count);
+                            count++;
+                        }
+                    }
+
+                }
+            }
+        </script>
+
+        <!-- who's paying  -->
+
+        <script>
+            // var names = [];
+            // whosPayingLoop(names);
+
+            // function whosPayingLoop() {
+            //     if (names.includes("DONE")) {
+            //         whosPaying(names);
+            //     } else {
+            //         names.push(prompt("Please add a name. If you are finished adding names please type DONE"));
+            //         whosPayingLoop();
+            //     }
+            // }
+
+            // function whosPaying(names) {
+            //     var numberOfPeople = names.length;
+            //     // gives random number 0<>1 then multiplies it by number of people then rounds down to a single number 
+            //     var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+            //     var randomPerson = names[randomPersonPosition];
+
+            //     console.log(randomPerson + " is going to buy lunch today.");
+
+            // }
+        </script>
     </main>
 
 </body>
