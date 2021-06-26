@@ -251,10 +251,20 @@
 
         <!-- fizz buzz -->
         <!-- if number is divisible by 3 then fizz, by 5 then buzz, if 3 and 5 fizzbuzz -->
+        <!-- fizz buzz loop makes it go until there is a "range error" -->
 
-        <script>
+        <!-- <script>
             var output = [];
             var count = 1;
+
+            function fizzBuzzLoop() {
+                if (count > 0) {
+                    fizbuzz();
+                    fizzBuzzLoop();
+                } else {
+                    fizzBuzzLoop();
+                }
+            }
 
             function fizbuzz() {
                 output.push(count);
@@ -278,9 +288,8 @@
 
                 }
             }
-            fizbuzz();
-            fizbuzz();
-            fizbuzz();
+
+            fizzBuzzLoop(); -->
         </script>
 
     </main>
