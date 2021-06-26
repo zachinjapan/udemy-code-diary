@@ -235,20 +235,53 @@
         <!-- guest list checker -->
 
         <script>
-            var guestList = ["Bob", "Jill", "James", "John"];
-            var yourName = prompt("Welcome to the Party. What is your name?");
-            // makes the name always start with a capital 
-            var capitalLetter = yourName.slice(0, 1).toUpperCase();
-            var lowerCaseletter = yourName.slice(1, 100).toLowerCase();
-            var yourName = capitalLetter + lowerCaseletter;
-            // tests to see if the person is on the list
-            if (guestList.includes(yourName)) {
-                alert("Welcome to the party " + yourName + ".");
-            } else {
-                alert("Sorry you're not on the list.");
-            }
+            // var guestList = ["Bob", "Jill", "James", "John"];
+            // var yourName = prompt("Welcome to the Party. What is your name?");
+            // // makes the name always start with a capital 
+            // var capitalLetter = yourName.slice(0, 1).toUpperCase();
+            // var lowerCaseletter = yourName.slice(1, 100).toLowerCase();
+            // var yourName = capitalLetter + lowerCaseletter;
+            // // tests to see if the person is on the list
+            // if (guestList.includes(yourName)) {
+            //     alert("Welcome to the party " + yourName + ".");
+            // } else {
+            //     alert("Sorry you're not on the list.");
+            // }
         </script>
 
+        <!-- fizz buzz -->
+        <!-- if number is divisible by 3 then fizz, by 5 then buzz, if 3 and 5 fizzbuzz -->
+
+        <script>
+            var output = [];
+            var count = 1;
+
+            function fizbuzz() {
+                output.push(count);
+
+                if (count % 3 === 0 && count % 5 === 0) {
+                    console.log("fiz buzz");
+                    count++;
+                } else {
+                    if (count % 3 === 0) {
+                        console.log("fizz");
+                        count++;
+                    } else {
+                        if (count % 5 === 0) {
+                            console.log("buzz");
+                            count++;
+                        } else {
+                            console.log(count);
+                            count++;
+                        }
+                    }
+
+                }
+            }
+            fizbuzz();
+            fizbuzz();
+            fizbuzz();
+        </script>
 
     </main>
 
