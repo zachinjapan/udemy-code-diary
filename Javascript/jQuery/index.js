@@ -87,4 +87,4 @@ $("h8").on("click", function () {
     $("h1").fadeToggle().fadeToggle().slideUp().slideDown().animate({
         opacity: 0.1
     });
-})
+});
