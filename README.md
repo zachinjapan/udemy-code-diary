@@ -6,3 +6,4 @@ Please download the entire depository, open it in VS code, and then launch a liv
 
 You can then read the code and see how it is implemented in the browser.
 
+the github pages link has had some issues with the header leading back to Index
