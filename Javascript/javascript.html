@@ -460,12 +460,26 @@
                 this.preferedWorkingHours = preferedWorkingHours;
                 this.workPermitStatus = workPermitStatus;
                 this.languages = languages;
+
+                this.clean = function () {
+                    alert("I'm coming in");
+                    alert("(cleaning noises)");
+                    alert("All done!");
+                }
             }
 
             // adding new housekeeper using a constructor function
             // DONT FORGET THE "new"!!!!! 
 
             housekeeper2 = new HouseKeeper("Bill", "Evening", "pending", "English");
+
+            housekeeper2.clean();
+
+            addEventListener("keydown", function () {
+                alert("ouch! please be a little more gentle");
+            });
+
+
 
             console.log(housekeeper2.name);
         </script>
