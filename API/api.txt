@@ -1,0 +1,35 @@
+API
+
+1. Endpoint 
+
+(url up until the first ?)
+
+(ex )
+
+
+2. Paths  
+ 
+ (EX https://v2.jokeapi.dev/joke/Any)
+
+3. Parameters 
+
+(go at the end of the ur after question mark)
+
+(EX https://v2.jokeapi.dev/joke/Any?type=single)
+
+
+4. Authentication
+
+(used by websites to limit how often the data is being requested, often to make a subscription model $$$$)
+
+(you use an API key after the enpoint url)
+
+
+Postman
+
+->easy to add Parameters
+->gets data back as a json file (javascript object notation)
+(everyone's favorite because it is easy to read but also collapsable)
+
+
+
