@@ -3,9 +3,6 @@
 // $ npm install express 
 
 // require express
-const {
-    response
-} = require("express");
 const express = require("express");
 
 // using app is best practice and will be what you target to use express
